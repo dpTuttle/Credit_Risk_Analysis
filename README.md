@@ -80,6 +80,6 @@ The Balanced Random Forest Classifier was used to resample the training data usi
 
 ## Summary
 
-- From the results, it is evident that the **Easy Ensemble AdaBoost Classifier** is the winner among all the models fitted. It has the highest accuracy score and was able to correctly classify more high and low risk loans than the other models.
+- From the results, it is evident that the **Easy Ensemble AdaBoost Classifier** or the **Random Forrest** model are the winners among all the models fitted.They had the highest accuracy scores and were able to correctly classify more high and low risk loans than the other models.
 - However, none of these models were a good fit when it came to predicting high-risk loans. The best we could get was from the **SMOTEEN** model which produced a mere 57% of high-risk loans being correctly predicted. So this model can be used only if we're not interested in predicting high-risk loans, which is unlikely.
 - This might be a problem of overfitting and/or not having enough useful features in the dataset. We could inspect which features are really correlated with the target variable and fit a model using only those. If that model too fails to predict both low and high-risk loans correctly, we will have to search for more data. 
