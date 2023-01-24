@@ -60,26 +60,26 @@ The Combination method(over and under sampling) used **SMOTEENN** to remove outl
 
 The Balanced Random Forest Classifier was used to resample the training data using the **BalancedRandomForestClassifier** algorithm with XXX estimators to classify the testing data.The following image and information refers to the resulting balanced accuracy score, confusion matrix, and classification report.
 
-[INSERT IMAGE URL HERE]
+![Random_Forrest](https://github.com/dpTuttle/Credit_Risk_Analysis/blob/main/Resources/RandomForest.png)
 
-- The balanced accuracy score for this model is comparatively high at XXX%, meaning that XXX% of the testing credit data was accurately classified.
-- The precision for the high-risk loans(0.04) is low compared to low-risk loan(XXX), indicating a large number of false positives, which indicates an unreliable positive classification.
-- The recall score for low-risk loans is very high at XXX% and for the high-risk loans is fairly high too at XXX%. This shows that the classifier is good at predicting true positives for low-risk loans.
-- The high f1 score for low-risk loans is XXX indicating a good model at classifying low_risk loan.
+- The balanced accuracy score for this model is comparatively high at 68%, meaning that 68% of the testing credit data was accurately classified.
+- The precision for the high-risk loans(0.93) is high compared to low-risk loan(1.00), indicating a large number of false positives, which indicates an unreliable positive classification.
+- The recall score for low-risk loans is very high at 37% and for the high-risk loans is high too at 100%. This shows that the classifier is good at predicting true positives for low-risk loans.
+- The high f1 score for low-risk loans is 1.00 indicating a good model at classifying low_risk loan.
 
 ### Easy Ensemble AdaBoost Classifier
 
 The Balanced Random Forest Classifier was used to resample the training data using the **EasyEnsembleClassifier** algorithm with 100 estimators to classify the testing data.The following image and information refers to the resulting balanced accuracy score, confusion matrix, and classification report.
 
-[INSERT IMAGE URL HERE]
+![Easy_Ensemble](https://github.com/dpTuttle/Credit_Risk_Analysis/blob/main/Resources/Easy_Ensemble.png)
 
-- The balanced accuracy score for this model is comparatively high at XXX%, meaning that XXX% of the testing credit data was accurately classified.
-- The precision for the high-risk loans(XXX) is low compared to low-risk loan(XXX), indicating a large number of false positives, which indicates an unreliable positive classification.
-- The recall score for low and high risk loans are quite high at XXX% and XXX%, respectively. This shows that the classifier is good at predicting true positives for both cases.
-- The high f1 score for low-risk loans is XXX indicating a good model at classifying low_risk loan compared to high-risk loans at XXXX.
+- The balanced accuracy score for this model is comparatively high at 68%, meaning that 68% of the testing credit data was accurately classified.
+- The precision for the high-risk loans(93%) is low compared to low-risk loan(1.00%), indicating a large number of false positives, which indicates an unreliable positive classification.
+- The recall score for low and high risk loans are quite high at 37% and 100%, respectively. This shows that the classifier is ok at predicting true positives for both cases.
+- The high f1 score for low-risk loans is 1.00 indicating a good model at classifying low_risk loan compared to high-risk loans at .52.
 
 ## Summary
 
-- From the results, it is evident that the **XXXXXXXXXXXXXXXXXX** is the winner among all the models fitted. It has the highest accuracy score and was able to correctly classify more high and low risk loans than the other models.
-- However, none of these models were a good fit when it came to predicting high-risk loans. The best we could get was from the XXXXXXXXXXXXXXXXXXX which produced a mere XXX% of high-risk loans being correctly predicted. So this model can be used only if we're not interested in predicting high-risk loans, which is unlikely.
+- From the results, it is evident that the **Easy Ensemble AdaBoost Classifier** is the winner among all the models fitted. It has the highest accuracy score and was able to correctly classify more high and low risk loans than the other models.
+- However, none of these models were a good fit when it came to predicting high-risk loans. The best we could get was from the **SMOTEEN** model which produced a mere 57% of high-risk loans being correctly predicted. So this model can be used only if we're not interested in predicting high-risk loans, which is unlikely.
 - This might be a problem of overfitting and/or not having enough useful features in the dataset. We could inspect which features are really correlated with the target variable and fit a model using only those. If that model too fails to predict both low and high-risk loans correctly, we will have to search for more data. 
