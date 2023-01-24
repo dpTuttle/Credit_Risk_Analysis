@@ -18,8 +18,7 @@ The Naive Random Oversampling method used **RandomOverSampler** to resample the 
 
 - The balanced accuracy score for this model is around 64%, meaning that the model predicted the credit risk accurately 64% of the time. This is a fairly positive score, but not great.
 - The precision scores for this model are very skewed toward the low-risk loans (1.00) as all of the low-risk loans were correctly predicted, but very few of the high-risk loans (0.01) were accurately predicted. **Therefore, this model is not good for identifying high-risk loans.**
-- The recall scores for this model show that the model is merginally better at identifying positive high-risk loans (70%%) than positive low-risk loans (59%) and the recall scores are not great for either.
-- The f1 scores for low and high risk loans are XXX and XXX resprctively, indicating a bad model for identifying high_risk loans compared to low-risk ones.
+- The recall scores for this model show that the model is merginally better at identifying positive high-risk loans (70%) than positive low-risk loans (59%) and the recall scores are not great for either.
 
 ### SMOTE Oversampling
 
